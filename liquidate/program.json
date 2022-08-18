@@ -1,0 +1,10 @@
+{
+    "program": "liquidate.aleo",
+    "version": "0.0.0",
+    "description": "",
+    "development": {
+        "private_key": "APrivateKey1zkpCdysKNscDxGgzXQwF6pDX6aDufn8rKdKXGeexQRhYyej",
+        "address": "aleo14ug59l6jjj9lsax7tkzvts399dp3g0k9cpjt890gf7nd6r0sss8qa2j34u"
+    },
+    "license": "MIT"
+}

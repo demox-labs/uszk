@@ -1,0 +1,10 @@
+{
+    "program": "price_feed.aleo",
+    "version": "0.0.0",
+    "description": "",
+    "development": {
+        "private_key": "APrivateKey1zkp39hDHcQpf9DhMYxqZoEMisRMCk5AfLgcWXeUMhA5JgPH",
+        "address": "aleo1jnyhy079am7tr4q7hwfa6k5qj2p2lf8tspha2tjp9m266x05tyzqgzszga"
+    },
+    "license": "MIT"
+}

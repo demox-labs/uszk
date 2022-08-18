@@ -1,0 +1,10 @@
+{
+    "program": "vault.aleo",
+    "version": "0.0.0",
+    "description": "",
+    "development": {
+        "private_key": "APrivateKey1zkp6Qj1JFggn1nbVPvftQdpG2vck243Awi2tUhSbb3UxQSW",
+        "address": "aleo15lxfxymk5503euehlm0khxe7jvj437mxh2w3gd5kfl00qq4dygyqdx6del"
+    },
+    "license": "MIT"
+}
