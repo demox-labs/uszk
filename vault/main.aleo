@@ -1,5 +1,3 @@
-import token.aleo;
-
 // The 'vault.aleo' program. Missing a ton of checks. Loosely following
 // https://github.com/liquity/dev/blob/main/packages/contracts/contracts/BorrowerOperations.sol
 program vault.aleo;
@@ -9,7 +7,7 @@ assumptions
 mapping values can be read
 
 necessary constants
-COLLATERALIZATION_RATIO
+MIN_COLLATERALIZATION_RATIO
 MINIMUM_DEPOSIT
 LIQUIDATION_SECURITY_DEPOSIT
 LIQUIDATION_POOL
@@ -50,7 +48,7 @@ function initialize_vault:
 
     div r6 r5 into r7; // expected collateralization ratio
 
-    IF r7 >= COLLATERALIZATION_RATIO:
+    IF r7 >= MIN_COLLATERALIZATION_RATIO:
         THROW ERROR;
     
     SEND LIQUIDATION_SECURITY_DEPOSIT TO LIQUIDATION_POOL;
@@ -116,7 +114,7 @@ function remove_collateral_vault:
     div r2 vault_borrows[self.caller] into r3; // new collateralization ratio
 
 
-    IF r3 < COLLATERALIZATION_RATIO:
+    IF r3 < MIN_COLLATERALIZATION_RATIO:
         THROW ERROR;
     
     // should save new collateralization ratio    
@@ -141,7 +139,7 @@ function borrow:
     mul vault_deposits USD_AG_PRICE into r5; // value of what's in the vault
     div r5 r4 into r6; // new collateralization ratio
 
-    IF r6 < COLLATERALIZATION_RATIO:
+    IF r6 < MIN_COLLATERALIZATION_RATIO:
         THROW ERROR;
 
     SEND r0 TO self.caller;
