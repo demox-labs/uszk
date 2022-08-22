@@ -1,0 +1,10 @@
+{
+    "program": "deposit.aleo",
+    "version": "0.0.0",
+    "description": "",
+    "development": {
+        "private_key": "APrivateKey1zkp9DVUKtXsiF4SjM8ZXBmdf3QjkbDkW7Un5riA1nrhckvY",
+        "address": "aleo1p67kc8nau3azkrcwu425u9w6zezkyscadxqtjz32fvc6g0yjmqxqymcdw7"
+    },
+    "license": "MIT"
+}
